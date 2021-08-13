@@ -1,0 +1,1 @@
+#Darkness Of Kaahlmar is a python txt script user choice program game. I created this for my week 2  python projectat DigitalCrafts  It has a main villian, Kaahlmar, and a hero that the user will chose a name and play through a fight sequence. Run it and enjoy!
