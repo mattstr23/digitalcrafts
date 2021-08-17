@@ -1,0 +1,63 @@
+.mainHead {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    color: firebrick;
+    text-align: center;
+    border: 5px solid blue;
+    background-color: ivory;
+}
+.interest {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: goldenrod;
+}
+.intList {
+    font-family: monospace;
+    font-size: x-large;
+}
+.hikingHead {
+    background-color: rgb(25, 68, 23);
+    font-size: 500%;
+    color: maroon;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    text-decoration-line: underline;
+    border: 5px solid black;
+}
+.hikeBody {
+    font-size: 150%;
+    text-align: center;
+}
+.sportHead {
+    height: 200px;
+    text-align: center;
+    background-color: rgb(145, 139, 140);
+    font-size: 300%;
+    color: rgb(63, 21, 21);
+    text-decoration-line: underline;
+    border: 5px solid rgb(145, 5, 5);
+}
+.sportBody {
+    color: rgb(247, 248, 241);
+    text-align: center;
+}
+.sportList {
+    color: rgb(0, 0, 0);
+    font-size: 150%;
+    text-align: center;
+}
+.exerHead {
+    text-align: center;
+    color: rgb(22, 21, 21);
+    border: 5px solid rgb(58, 12, 12)
+}
+.codeHead {
+    border: 5px solid black;
+    text-align: center;
+}
+.brewHead {
+    border: 5px solid maroon;
+    text-align: center;
+    color: navy;
+    background-color: snow;
+}
+
