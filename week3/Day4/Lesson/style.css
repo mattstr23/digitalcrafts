@@ -1,0 +1,31 @@
+.formstyle {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.txtinput {
+    width: 200px;
+    padding-left: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border: 1.15px solid;
+    border-radius: 2px;
+}
+
+::placeholder {
+    color: darkgray;
+    opacity: 1;
+}
+.subbutton {
+    background-color: coral;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: cornsilk;
+    border: none;
+    border-radius: 2px;
+}
