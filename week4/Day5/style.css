@@ -1,0 +1,47 @@
+body {
+    background-image: url("https://bit.ly/3zqjy66");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 6px;
+}
+.headers {
+    background-color: teal;
+    margin-top: 100px;
+    padding-bottom: 0%;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: underline;
+
+}
+.userArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.input {
+    border-radius: 8px;
+    border: 2px solid black;
+
+}
+.subButton {
+
+
+}
+.weatherContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: teal;
+    border: 5px solid white;
+    border-radius: 10px;
+    color: F7F7F7;
+
+}
