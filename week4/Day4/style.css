@@ -1,0 +1,23 @@
+.pokeCard {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 250px;
+    width: 175px;
+    background-color: grey;
+    border-radius: 8px;
+    color: bisque;
+    align-items: center;
+}
+img {
+    height: 150px;
+    width: 120px;
+}
+.cardContainer {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 20px
+}
+h1 {
+    text-align: center;
+}
