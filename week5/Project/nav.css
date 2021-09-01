@@ -2,6 +2,9 @@ body{
     margin: 0;
     padding: 0;
 }
+.navDiv {
+    width: 100%;
+}
 .navBar{
     display: flex;
     justify-content: space-between;
