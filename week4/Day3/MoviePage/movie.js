@@ -1,5 +1,5 @@
 const apiKey = "8644e34e";
-const movieDB = `http://www.omdbapi.com/?apikey=${apiKey}`;
+const movieDB = `https://www.omdbapi.com/?apikey=${apiKey}`;
 
 const movieContainer = document.querySelector(".movieContainer");
 const searchButton = document.querySelector(".searchButton");
