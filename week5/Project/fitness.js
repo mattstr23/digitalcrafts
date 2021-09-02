@@ -21,7 +21,7 @@ lowerLegButton.addEventListener("click", (e) => {fetchData(e.target.id)});
 cardioButton.addEventListener("click", (e) => {fetchData(e.target.id)});
 
 async function fetchData(typeOfExercise) {
-  const container = document.querySelector(".fitness-container");
+  const container = document.querySelector(".fitContainer");
   container.innerHTML = "";
   const data = await fetch(
     `https://exercisedb.p.rapidapi.com/exercises/bodypart/${typeOfExercise}`,
@@ -35,16 +35,23 @@ async function fetchData(typeOfExercise) {
   const json = await data.json();
 
   for (let exercise of json) {
+    const exerciseCard = document.createElement("div");
+    exerciseCard.className = "exerciseCard";
     const exerciseName = document.createElement("h3");
+    exerciseName.className = "exerciseName";
     const exerciseEquipment = document.createElement("h3");
+    exerciseEquipment.className = "equipment";
     const exerciseGif = document.createElement("img");
+    exerciseGif.className = "picture";
     
     exerciseName.innerText = exercise.name;
     exerciseEquipment.innerText = exercise.equipment;
     exerciseGif.src = exercise.gifUrl;
-    container.append(exerciseName, exerciseEquipment, exerciseGif);
+    exerciseCard.append(exerciseName, exerciseGif, exerciseEquipment);
+    container.append(exerciseCard);
   }
 }
+
 const toggleMen = document.querySelector(".toggleMenu")
 const navLinks = document.querySelector(".navLinks")
 
