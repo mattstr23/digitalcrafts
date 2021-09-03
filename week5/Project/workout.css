@@ -78,6 +78,7 @@ input {
     overflow: auto;
     width: 90vw;
     height: 100%;
+    padding-bottom: 15px;
 }
 .exerciseCard {
     display: flex;
@@ -89,7 +90,7 @@ input {
     width: 180px;
     margin: 10px;
     background-color: rgba(255, 255, 255, 0.575);
-    border: 2px solid #222831;
+    border: 1px solid #222831a4;
     border-radius: 5px;
     font-family: 'Noto Sans JP', sans-serif;
 }
