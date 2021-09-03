@@ -1,0 +1,118 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    background-image: url(https://bit.ly/3DHScLd);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bodyContainer {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin: 30px;
+    margin-bottom: 0;
+    border: 2px solid #212121;
+    border-radius: 25px;
+    background-color: #efececda;
+}
+.heading {
+    font-family: 'Merienda', cursive;
+    font-size: 20px;
+    text-align: right;
+    color: white;
+    background-color: #212121;
+    margin-top: 30px;
+    height: fit-content;
+    margin-right: 50px;
+    padding-right: 30px;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.descrip {
+    font-family: 'Assistant', sans-serif;
+    background-color: #757a79;
+    margin-top: 15px;
+    margin-left: 50px;
+    padding-left: 30px;
+    border-radius: 10px 0 0 10px;
+    box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.brocoli {
+    align-self: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    background-color: #ff0000;
+    border-radius: 1px 20px 1px;
+}
+.foodContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    width: 90vw;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.foodCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: auto;
+    width: 500px;
+    height: 400px;
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #eeeeeee5;
+    border: 2px solid #222831;
+    border-radius: 5px;
+    box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 10px;
+}
+.recipeName {
+    font-size: 20px;
+}
+.recipePic {
+    width: 300px;
+    height: 150px;
+    margin-bottom: 5px;
+}
+.recipeSummary {
+    overflow: auto;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    margin: 5px;
+}
+.recipeSummary a {
+    text-decoration: none;
+    color: #ff0000;
+}
+.recipeUrl {
+    font-size: 20px;
+    text-decoration: none;
+    color: #ff0000;
+    margin-bottom: 10px;
+}
+
+.brocoli img {
+    height: 75px;
+    width: 75px;
+}
+.brocoli img:hover {
+    filter: grayscale();
+    border-radius: 1px 20px 1px;
+    background-color: #c1c0b9;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+@media (max-width: 550px) {
+
+} 

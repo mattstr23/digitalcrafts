@@ -15,15 +15,14 @@
     grid-template-rows: auto;
     justify-content: center;
     align-items: center;
-    background-color: #dfdfdf;
+    background-color: #dfdfdfaf;
     margin:30px;
     max-width: 1200px;
     padding: 15px;
     height: 90vh;
     overflow: auto;
-    border: 5px solid #3a4750;
+    border: 1px solid #3a4750;
     border-radius: 5px;
-    box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .workoutImg img {
     width: 80%;

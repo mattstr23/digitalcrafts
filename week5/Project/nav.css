@@ -9,6 +9,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
     background-color: black;
     color: white;
     border-bottom: 4px solid #3c4245;
@@ -81,5 +82,6 @@ body{
     .navLinks.active {
         display: flex;
     }
+    
 
 }
