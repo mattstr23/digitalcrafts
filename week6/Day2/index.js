@@ -10,8 +10,8 @@ const students = [
 
 const es6Renderer = require("express-es6-template-engine")
 app.engine("html", es6Renderer);
-app.set('views', 'templates')
-app.set('view engine', 'html')
+app.set('views', 'templates');
+app.set('view engine', 'html');
 
 app.get("/", (req, res) => {
     // let list = `<ul>`
