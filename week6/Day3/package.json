@@ -1,0 +1,20 @@
+{
+  "name": "day3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@supabase/supabase-js": "^1.22.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
+  }
+}
