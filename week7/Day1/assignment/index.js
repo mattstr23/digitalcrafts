@@ -5,8 +5,6 @@ const creds = require("./db");
 app.use(express.json());
 const PORT = 3003;
 
-app.listen(PORT, console.log(`Listening on ${PORT}`));
-
 //Restaurant
 
 app.get("/showRestaurant", (req, res) => {
@@ -60,7 +58,7 @@ app.post("/addMovie", (req, res) => {
     if (err) {
       return console.error("Error getting connected to the client", err.stack);
     }
-    client.query(`INSERT INTO movies (id,title) 
+    client.query(`INSERT INTO movies (id,name) 
     VALUES (${req.body.id},'${req.body.title}');`, 
     (err, result) => {
       if (err) {
@@ -70,3 +68,5 @@ app.post("/addMovie", (req, res) => {
     });
   });
 });
+
+app.listen(PORT, console.log(`Listening on ${PORT}`));
