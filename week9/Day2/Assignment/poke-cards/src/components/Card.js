@@ -14,6 +14,7 @@ class Card extends Component {
     render() {
         const {id, name, hp, sprites } = this.props.pokemon;
         const {flipped} = this.state;
+        const deletePoke = this.props.deletePoke
         return (
             <div className="pokeCard">
                 <div className="header">
@@ -22,7 +23,7 @@ class Card extends Component {
                 </div>
                 <img onMouseEnter={this.flipFunction} onMouseLeave={this.flipFunction} src={flipped ? sprites.back: sprites.front} />
                 <h4>Health: {hp}</h4>
-                <button>Remove</button>
+                <button onClick={() => {deletePoke(id)}}>Remove</button>
 
             </div>
         )
