@@ -1,0 +1,66 @@
+.App {
+  margin: 0;
+  padding: 0;
+  width: 99vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #113f67;
+}
+.App h1 {
+  color: #ffdd00;
+}
+.pokeContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  background-color: rgba(255, 0, 0, 0.589);
+  border: 10px solid #ffdd00;
+  border-radius: 10px;
+}
+.pokeCard {
+  text-align: center;
+  width: 150px;
+  background-color: #113f67;
+  border: 4px solid #ffdd00;
+  border-radius: 10px;
+  padding: 10px;
+  padding-top: 0px;
+  margin: 10px;
+}
+.pokeCard h4 {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  color: white;
+}
+.pokeCard button {
+  background-color: red;
+  border: 2px solid #ffdd00;
+  border-radius: 50px;
+  color: white;
+}
+.pokeCard button:hover {
+  border: 2px solid red;
+  background-color: #ffdd00;
+  color: #113f67;
+}
+.pokeCard button:focus {
+  border: 2px inset red;
+  background-color: #ffc93c;
+  color: #113f67;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.header h5 {
+  color: red;
+  margin-top: 1px;
+}
+.header h3 {
+  color: #ffdd00;
+  margin-top: 10px;
+}
