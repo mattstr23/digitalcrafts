@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import {useState} from "react";
+// This is a hook^^
+import Form from "./components/Forms";
+import ToDoList from "./components/ToDoList"
 
 function App() {
+
+const [counter, setCounter] = useState(0);
+const [userName, setUserName] = useState("");
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <h1>Hooks</h1>
+
+      <p>User is {userName}</p>
+      <input onChange={(e) => setUserName(e.target.value)} type="text" placeholder="User Name"/>
+      <div>
+        <p> Counter is: {counter} </p>
+        <button onClick={() => setCounter(counter + 1)}>Add</button>
+        <button onClick={() => setCounter(counter - 1)}>Subract</button>
+      </div>  */} 
+      <ToDoList />
     </div>
   );
 }

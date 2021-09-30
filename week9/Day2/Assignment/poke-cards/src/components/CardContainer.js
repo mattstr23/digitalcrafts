@@ -212,11 +212,11 @@ export default class CardContainer extends Component {
     ],
   };
 
-  deletePoke = id  => {
-    console.log(id)
+  deletePoke = (index)  => {
     alert("Poke`Mon Removed!")
-    const pokemon = this.state.pokemon[0].pokemon.filter(pokemon => pokemon.id !== id);
-    this.setState({ pokemon: pokemon});
+    const copyOfPokemon = this.state.pokemon;
+    copyOfPokemon[0].pokemon.filter(index, 1);
+    this.setState({ pokemon: copyOfPokemon});
   };
 
   render() {
@@ -224,8 +224,8 @@ export default class CardContainer extends Component {
 
     return (
       <div class="pokeContainer">
-        {pokeData.map((pokemon) => (
-          <Card deletePoke={this.deletePoke} pokemon={pokemon} />
+        {pokeData.map((pokemon, index) => (
+          <Card deletePoke={this.deletePoke} index={index} pokemon={pokemon} />
         ))}
       </div>
     );
