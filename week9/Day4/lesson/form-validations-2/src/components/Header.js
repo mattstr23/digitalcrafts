@@ -1,10 +1,12 @@
 import React from "react"
+import { MainHeader } from "../styled-components/HeaderStyle";
+
 
 export default function Header() {
+
     return (
-        <div>
-            <h1>Header</h1>
-            
+        <div> 
+            <MainHeader>Random People</MainHeader> 
         </div>
-    )
+    );
 }
