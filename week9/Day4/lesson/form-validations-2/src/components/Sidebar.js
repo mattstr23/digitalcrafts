@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react"
 import { MainDiv, OtherLinks, UserDiv, UserImg, UserInfo, UserName, UserWelcome } from "../styled-components/SidebarStyle";
+import { Link } from "react-router-dom";
 
 const URL = "https://randomuser.me/api/";
 export default function Sidebar() {
@@ -32,10 +33,21 @@ export default function Sidebar() {
                     <UserName>{user?.name?.first} {""} {user?.name?.last}</UserName>
                 </UserInfo>
             </UserDiv>
-            <OtherLinks>Forms</OtherLinks>
-            <OtherLinks>UI Elements</OtherLinks>
-            <OtherLinks>Charts</OtherLinks>
-            <OtherLinks>Tables</OtherLinks>
+            <Link to="/">
+              <OtherLinks>Home</OtherLinks>
+            </Link>
+            <Link to="/dashboard">
+              <OtherLinks>Dashboard</OtherLinks>
+            </Link>
+            <Link to="/login">
+              <OtherLinks>Login</OtherLinks>
+            </Link>
+            <Link to="/account">
+              <OtherLinks>Account</OtherLinks>
+            </Link>
+            <Link to="/garage">
+              <OtherLinks>Garage</OtherLinks>
+            </Link>
         </MainDiv>
     )
 }
