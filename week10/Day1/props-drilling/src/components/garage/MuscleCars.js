@@ -1,14 +1,12 @@
 import React from 'react'
-import Garage from '../garage/Garage';
 import "../../App.css"
 
-export default function Home() {
+export default function MuscleCars(props) {
 
     return (
     <div className="box">
-        <h1>Home</h1>
-        <Garage />
-
+        <h1>Muscle Cars</h1>
+        <p>{props.mustang}</p>
 
     
     </div>
