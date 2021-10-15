@@ -1,10 +1,13 @@
-import React, {useEffect, useState} from "react"
+import React, {useEffect} from "react"
 import { MainDiv, OtherLinks, UserDiv, UserImg, UserInfo, UserName, UserWelcome } from "../styled-components/SidebarStyle";
 import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
 
 const URL = "https://randomuser.me/api/";
-export default function Sidebar() {
-    const [user, setUser] = useState({});
+export default function Sidebar(props) {
+    const user = useSelector(state => state.userData);
+    const viewSideBar = props.viewSideBar;
+    const dispatch = useDispatch();
 
     useEffect(() => {
       const getNewsData = async () => {
@@ -18,16 +21,17 @@ export default function Sidebar() {
         });
         const jsonNews = await getTheNews.json();
         console.log(jsonNews);
-        setUser({
-          ...jsonNews.results[0], userImage: jsonNews?.results[0]?.picture?.thumbnail,});
+        dispatch({type: "GET_USER", payload: {...jsonNews.results[0]}})
       };
       getNewsData();
       return () => {};
     }, []);
     return (
+      <>
+      {viewSideBar ? (
         <MainDiv>
             <UserDiv>
-                <UserImg src={user?.userImage}/>
+                <UserImg src={user?.picture?.large}/>
                 <UserInfo>
                     <UserWelcome>Welcome</UserWelcome>
                     <UserName>{user?.name?.first} {""} {user?.name?.last}</UserName>
@@ -48,6 +52,8 @@ export default function Sidebar() {
             <Link to="/garage">
               <OtherLinks>Garage</OtherLinks>
             </Link>
-        </MainDiv>
-    )
+        </MainDiv>) : ""
+        }
+      </>
+    );
 }

@@ -1,22 +1,13 @@
 import styled from 'styled-components'
 
-export const MainDiv = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-width: 100%;
-height: 100%;
-`
 export const LoginForm = styled.form`
 display: flex;
 flex-direction: column;
-position: relative;
 align-items: center;
 background-image: linear-gradient(#714288,#400082,#3a0077);
 height: 25rem;
 width: 18rem;
-margin: 1rem;
+margin: 10px;
 border-radius: 0.5rem;
 `
 export const UserInputs = styled.input`

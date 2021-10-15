@@ -5,7 +5,7 @@ import {useSelector, useDispatch} from "react-redux"
 export default function DealerShip(props) {
     const bugatti = useSelector(state => state.bugatti)
     const kawasaki = useSelector(state => state.kawasaki)
-    const dispatch = useDispatch();
+    const dispatch = useDispatch()
 
 
 
