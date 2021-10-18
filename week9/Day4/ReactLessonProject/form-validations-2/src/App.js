@@ -14,6 +14,7 @@ import {useState} from 'react'
 
 function App() {
   const[viewSideBar, setViewSideBar] = useState(true);
+  const register = true;
   return (
     <Router>
       <Switch/>
