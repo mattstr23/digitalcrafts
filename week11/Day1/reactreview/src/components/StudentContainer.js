@@ -1,12 +1,14 @@
 import React from 'react'
 import Students from './Students'
+import { useSelector } from 'react-redux'
 
 export default function StudentContainer(props) {
+    const students = useSelector((state) => state.students)
 
     return (
         <div>
             <h1>Student Container</h1>
-            {/* {students.map((student) => <Students student={student}/>)} */}
+            {students.map((student) => <Students student={student}/>)}
         </div>
     )
 }
